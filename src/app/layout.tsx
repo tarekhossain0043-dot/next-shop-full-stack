@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${outfit.variable} antialiased`}>
-        <div className="mx-auto p-3 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
+        <div className="mx-auto">
           <Navbar />
           {children}
           <Footer />

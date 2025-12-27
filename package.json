@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "lucide-react": "^0.562.0",
+    "motion": "^12.23.26",
+    "motion-react": "^0.15.0-alpha.1",
     "next": "^16.1.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-icon": "^1.0.0",
     "react-icons": "^5.5.0",
+    "remove": "^0.1.5",
     "rm": "^0.1.8"
   },
   "devDependencies": {
