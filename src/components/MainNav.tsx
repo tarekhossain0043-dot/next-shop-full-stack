@@ -7,7 +7,7 @@ import ContactPhone from "./main-nav/ContactPhone";
 
 export default function MainNav() {
   return (
-    <div className="py-2 bg-white/70">
+    <div className="py-2 bg-white/70 border-b border-slate-100">
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-6">

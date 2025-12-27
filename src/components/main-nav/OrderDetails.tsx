@@ -1,9 +1,13 @@
 "use client";
 
+import { LucideRefreshCw } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { CiCircleAlert, CiCircleInfo } from "react-icons/ci";
 import { FaHeadphonesAlt, FaMap } from "react-icons/fa";
-import { FaCodeCompare, FaI } from "react-icons/fa6";
+import { FaCodeCompare, FaHeadphonesSimple, FaI } from "react-icons/fa6";
+import { PiHeadphones, PiMapPinLine } from "react-icons/pi";
+import { SlRefresh } from "react-icons/sl";
 
 export default function OrderDetails() {
   return (
@@ -12,21 +16,21 @@ export default function OrderDetails() {
         href="/track-order"
         className="text-[14px] flex items-center gap-2 leading-5 text-[#5F6C72] hover:text-[#FA8232] cursor-pointer capitalize transition-all duration-300 ease-in-out "
       >
-        <FaMap className="w-5 h-5" />
+        <PiMapPinLine className="w-5 h-5" />
         <span className="font-normal text-[14px] leading-5">Track Order</span>
       </Link>
       <Link
         href="/compare"
         className="text-[14px] flex items-center gap-2 leading-5 text-[#5F6C72] hover:text-[#FA8232] cursor-pointer capitalize transition-all duration-300 ease-in-out "
       >
-        <FaCodeCompare className="w-5 h-5" />
+        <SlRefresh className="w-5 h-5" />
         <span className="font-normal text-[14px] leading-5">Compare</span>
       </Link>
       <Link
         href="/customer-support"
         className="text-[14px] flex items-center gap-2 leading-5 text-[#5F6C72] hover:text-[#FA8232] cursor-pointer capitalize transition-all duration-300 ease-in-out "
       >
-        <FaHeadphonesAlt className="w-5 h-5" />
+        <PiHeadphones className="w-5 h-5" />
         <span className="font-normal text-[14px] leading-5">
           Customer support
         </span>
@@ -35,7 +39,7 @@ export default function OrderDetails() {
         href="/track-order"
         className="text-[14px] flex items-center gap-2 leading-5 text-[#5F6C72] hover:text-[#FA8232] cursor-pointer capitalize transition-all duration-300 ease-in-out "
       >
-        <FaI className="w-5 h-5" />
+        <CiCircleInfo className="w-5 h-5" />
         <span className="font-normal text-[14px] leading-5">need help</span>
       </Link>
     </div>
