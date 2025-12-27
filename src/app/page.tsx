@@ -1,11 +1,5 @@
 const Homepage = () => {
-  return (
-    <div className="bg-black text-white text-3xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-      distinctio facere quaerat vitae eius reprehenderit sunt eveniet numquam
-      nihil nesciunt!
-    </div>
-  );
+  return <div className="bg-slate-50 text-3xl">home page</div>;
 };
 
 export default Homepage;
