@@ -9,3 +9,13 @@
 .container {
   @apply sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto p-3;
 }
+
+.swiper-pagination-bullets-dynamic{
+  left: 75px !important;
+  position: absolute;
+  bottom: 8% !important;
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{
+  background-color: #000 !important;
+  transform: scale(1.5) !important;
+}
