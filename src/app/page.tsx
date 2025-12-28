@@ -1,5 +1,12 @@
+import Hero from "@/components/Hero";
 const Homepage = () => {
-  return <div className="bg-slate-50 text-3xl">home page</div>;
+  return (
+    <div className="pt-2">
+      <div className="container">
+        <Hero />
+      </div>
+    </div>
+  );
 };
 
 export default Homepage;
