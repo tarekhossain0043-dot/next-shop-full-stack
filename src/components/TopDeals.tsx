@@ -4,12 +4,13 @@ import React from "react";
 import CountDownTimers from "./top-deals/CountDownTimer";
 import Link from "next/link";
 import { RxArrowTopRight } from "react-icons/rx";
+import Top_Product from "./top-deals/Top_Product";
 
 
 export default function TopDeals() {
   return (
     <div className="mt-18">
-      <div className="flex items-center justify-between gap-5">
+      <div className="flex items-center justify-between gap-5 mb-6">
         <div className="flex items-center">
           <h3 className="pr-4 text-[24px] leading-8 text-[#191C1F] mb-0 capitalize font-semibold">
             Today Best Deals
@@ -26,6 +27,7 @@ export default function TopDeals() {
             </span>
         </Link>
       </div>
+      <Top_Product />
     </div>
   );
 }
