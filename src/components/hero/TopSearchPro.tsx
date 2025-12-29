@@ -16,9 +16,9 @@ export default function TopSearchPro() {
     }
   ]
   return (
-    <div className="flex flex-col gap-5 w-full">
+    <div className="flex flex-col gap-5">
       {top_search_Pro.map((searchPro) => (
-        <div key={searchPro.id} className="rounded-md relative z-99 overflow-hidden bg-slate-900 shadow-sm p-10">
+        <div key={searchPro.id} className="rounded-md overflow-hidden relative z-99 bg-slate-900 shadow-sm p-10">
           <p className="text-[14px] font-medium leading-[1.05rem] text-[#EBC80C] mb-1.5">{searchPro.subtitle}</p>
           <h4 className="text-[24px] leading-8 text-white/80 mb-4.5">{searchPro.title1} <br /> {searchPro.title2}</h4>
           <Btn />
@@ -31,7 +31,7 @@ export default function TopSearchPro() {
         </div>
       ))}
       {searchData2.map((searchPro2) => (
-      <div key={searchPro2.id} className="flex items-center relative z-99 overflow-hidden hover:bg-slate-900 hover:text-white/80 text-slate-900 shadow-sm justify-center gap-5 px-8 py-9 bg-[#F2F4F5] rounded-md">
+      <div key={searchPro2.id} className="flex items-center overflow-hidden relative z-99 hover:bg-slate-900 hover:text-white/80 text-slate-900 shadow-sm justify-center gap-5 px-8 py-9 bg-[#F2F4F5] rounded-md">
         <div className="w-40 h-40">
           <Image src={searchPro2.img} alt="search-product-2" className="w-full h-full" width={160} height={160} />
         </div>

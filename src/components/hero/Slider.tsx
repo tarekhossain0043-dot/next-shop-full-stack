@@ -6,27 +6,30 @@ import Image from "next/image";
 import { hero_slider } from "@/assets/all_data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import 'swiper/css';
-import 'swiper/swiper.css';
-import 'swiper/css/pagination'
+import "swiper/css";
+import "swiper/swiper.css";
+import "swiper/css/pagination";
 import { disconnect } from "process";
 
 export default function Slider() {
-
   return (
-    <div className="bg-slate-100 relative max-w-4xl max-h-128 overflow-hidden rounded-md">
+    <div className="bg-slate-100 relative xl:max-w-4xl w-full xl:max-h-128 h-full overflow-hidden rounded-md">
       <Swiper
-        modules={[Pagination,Autoplay]}
-        spaceBetween={10}
+        modules={[Pagination, Autoplay]}
+        // spaceBetween={10}
         slidesPerView={1}
-        pagination={{ clickable: true,dynamicBullets :true,dynamicMainBullets : 3 }}
+        pagination={{
+          clickable: true,
+          dynamicBullets: true,
+          dynamicMainBullets: 3,
+        }}
         speed={2000}
-        loop = {true}
-        autoplay={{ delay: 2000,disableOnInteraction: true }}
+        loop={true}
+        // autoplay={{ delay: 2000, disableOnInteraction: true }}
       >
         {hero_slider.map((slider) => (
           <SwiperSlide key={slider.id}>
-            <div className="flex items-center justify-between p-14 rounded-sm shadow-sm">
+            <div className="flex flex-col gap-5 lg:flex-row items-center justify-between p-14 rounded-sm shadow-sm">
               {/* left area */}
               <div>
                 <p className="text-[14px] whitespace-nowrap max-[370px]:whitespace-normal mb-0 font-semibold text-[20px] text-[#2484C2] uppercase relative after:absolute after:content-[''] after:top-1/2 after:left-0 after:w-10 after:h-0.5 pl-12 after:bg-[#2484C2] after:transform -after:translate-y-1/2 after:pr-1 text-[#2484C2]">
@@ -50,7 +53,7 @@ export default function Slider() {
                   objectFit="cover"
                   width={400}
                   height={400}
-                  priority = {true}
+                  priority={true}
                 />
               </div>
             </div>

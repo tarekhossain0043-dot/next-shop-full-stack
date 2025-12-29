@@ -6,8 +6,8 @@ import TopSearchPro from "./hero/TopSearchPro";
 
 export default function ComponentName() {
   return (
-    <div>
-      <div className="grid grid-cols-1 lg:grid-cols-[8fr_4fr] gap-5">
+    <div className="w-full">
+      <div className="grid grid-cols-1 xl:grid-cols-[7fr_5fr] gap-5">
         {/* slider area  */}
         <div>
           <Slider />

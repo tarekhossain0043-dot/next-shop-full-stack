@@ -2,9 +2,11 @@
 
 :root {
   --secondary-clr: "#1B6392";
+  --border-clr : '#E4E7E9';
 }
 @theme {
   --color-secondary: var(--secondary-clr);
+  --color-border-clr : '#E4E7E9';
 }
 .container {
   @apply sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto p-3;
