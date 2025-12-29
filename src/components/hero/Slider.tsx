@@ -29,7 +29,7 @@ export default function Slider() {
       >
         {hero_slider.map((slider) => (
           <SwiperSlide key={slider.id}>
-            <div className="flex flex-col gap-5 lg:flex-row items-center justify-between p-14 rounded-sm shadow-sm">
+            <div className="flex flex-col gap-5 xl:flex-row xl:items-center items-start justify-between p-14 rounded-sm shadow-sm">
               {/* left area */}
               <div>
                 <p className="text-[14px] whitespace-nowrap max-[370px]:whitespace-normal mb-0 font-semibold text-[20px] text-[#2484C2] uppercase relative after:absolute after:content-[''] after:top-1/2 after:left-0 after:w-10 after:h-0.5 pl-12 after:bg-[#2484C2] after:transform -after:translate-y-1/2 after:pr-1 text-[#2484C2]">
@@ -50,7 +50,6 @@ export default function Slider() {
                 <Image
                   src={slider.img}
                   alt="slider-img"
-                  objectFit="cover"
                   width={400}
                   height={400}
                   priority={true}

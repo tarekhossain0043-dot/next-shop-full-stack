@@ -16,13 +16,13 @@ export default function TopSearchPro() {
     }
   ]
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-1 flex-col max-[1260px]:flex-row max-[766px]:flex-col gap-5 w-full">
       {top_search_Pro.map((searchPro) => (
-        <div key={searchPro.id} className="rounded-md overflow-hidden relative z-99 bg-slate-900 shadow-sm p-10">
+        <div key={searchPro.id} className="rounded-md xl:max-w-80.5 w-full overflow-hidden relative z-99 bg-slate-900 shadow-sm p-10">
           <p className="text-[14px] font-medium leading-[1.05rem] text-[#EBC80C] mb-1.5">{searchPro.subtitle}</p>
           <h4 className="text-[24px] leading-8 text-white/80 mb-4.5">{searchPro.title1} <br /> {searchPro.title2}</h4>
           <Btn />
-          <div className="bg-amber-300 absolute top-5 right-5 rounded-md p-3 text-slate-600 font-medium uppercase">
+          <div className="bg-amber-300 xl:text-sm absolute top-5 right-5 rounded-md p-3 text-slate-600 font-medium uppercase">
             {searchPro.off_Num}
           </div>
           <div className="max-w-48.5 w-full -z-1 absolute bottom-0 right-0">
@@ -31,9 +31,9 @@ export default function TopSearchPro() {
         </div>
       ))}
       {searchData2.map((searchPro2) => (
-      <div key={searchPro2.id} className="flex items-center overflow-hidden relative z-99 hover:bg-slate-900 hover:text-white/80 text-slate-900 shadow-sm justify-center gap-5 px-8 py-9 bg-[#F2F4F5] rounded-md">
+      <div key={searchPro2.id} className="flex xl:max-w-80.5 w-full items-center overflow-hidden relative z-99 hover:bg-slate-900 hover:text-white/80 text-slate-900 shadow-sm justify-center gap-5 px-8 py-9 bg-[#F2F4F5] rounded-md">
         <div className="w-40 h-40">
-          <Image src={searchPro2.img} alt="search-product-2" className="w-full h-full" width={160} height={160} />
+          <Image src={searchPro2.img} alt="search-product-2" className="w-full h-full object-contain" width={160} height={160} />
         </div>
         <div className="whitespace-nowrap">
           <h4 className="text-[24px] leading-8 whitespace-nowrap mb-4.5">{searchPro2.title_1} <br /> {searchPro2.title_2}</h4>

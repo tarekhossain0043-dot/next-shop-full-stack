@@ -2,25 +2,25 @@
 
 :root {
   --secondary-clr: "#1B6392";
-  --border-clr : '#E4E7E9';
 }
 @theme {
   --color-secondary: var(--secondary-clr);
-  --color-border-clr : '#E4E7E9';
+  --color-primary : '#F3DE6D';
+  --color-black : '#191C1F';
 }
 .container {
   @apply sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto p-3;
 }
 
-.swiper-pagination-bullets-dynamic{
+.swiper-pagination-bullets-dynamic {
   left: 75px !important;
   position: absolute;
   bottom: 5% !important;
-  @media only screen and (min-width: 900px){
+  @media only screen and (min-width: 900px) {
     bottom: 10% !important;
   }
 }
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
   background-color: #000 !important;
   transform: scale(1.5) !important;
 }
