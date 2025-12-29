@@ -26,3 +26,14 @@ export const hero_slider = [
         number : '$299'
     },
 ]
+
+export const top_search_Pro = [
+    {
+        id : 1,
+        subtitle : 'Summer Sales',
+        title1 : 'New Google',
+        title2 : ' Pixel 9 Pro',
+        off_Num : '29% OFF',
+        img :'/top-search-pro/top-search-1.png'
+    },
+]

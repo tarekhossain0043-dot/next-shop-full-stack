@@ -13,7 +13,10 @@
 .swiper-pagination-bullets-dynamic{
   left: 75px !important;
   position: absolute;
-  bottom: 8% !important;
+  bottom: 5% !important;
+  @media only screen and (min-width: 900px){
+    bottom: 10% !important;
+  }
 }
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{
   background-color: #000 !important;

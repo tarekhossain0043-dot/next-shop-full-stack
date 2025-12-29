@@ -9,10 +9,12 @@ import { Autoplay, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/swiper.css';
 import 'swiper/css/pagination'
+import { disconnect } from "process";
 
 export default function Slider() {
+
   return (
-    <div className="bg-slate-100 relative max-w-4xl h-130 overflow-hidden rounded-md">
+    <div className="bg-slate-100 relative max-w-4xl max-h-128 overflow-hidden rounded-md">
       <Swiper
         modules={[Pagination,Autoplay]}
         spaceBetween={10}
@@ -20,7 +22,7 @@ export default function Slider() {
         pagination={{ clickable: true,dynamicBullets :true,dynamicMainBullets : 3 }}
         speed={2000}
         loop = {true}
-        // autoplay={{ delay: 2000,disableOnInteraction: true }}
+        autoplay={{ delay: 2000,disableOnInteraction: true }}
       >
         {hero_slider.map((slider) => (
           <SwiperSlide key={slider.id}>
@@ -39,7 +41,7 @@ export default function Slider() {
                 <Btn />
               </div>
               <div className="relative">
-                <div className="w-25 h-25 flex absolute right-0 top-0 hidden min-[350px]:flex bg-[#2DA5F3] ring-4 ring-white/80 shadow-sm rounded-full items-center justify-center text-white font-medium">
+                <div className="w-15 h-15 flex absolute right-0 top-0 hidden min-[350px]:flex bg-[#2DA5F3] ring-4 ring-white/80 shadow-sm rounded-full items-center justify-center text-white font-medium">
                   {slider.number}
                 </div>
                 <Image

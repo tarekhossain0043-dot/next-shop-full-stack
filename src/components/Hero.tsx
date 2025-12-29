@@ -2,6 +2,7 @@
 
 import React from "react";
 import Slider from "@/components/hero/Slider";
+import TopSearchPro from "./hero/TopSearchPro";
 
 export default function ComponentName() {
   return (
@@ -12,7 +13,9 @@ export default function ComponentName() {
           <Slider />
         </div>
         {/* top searching product */}
-        <div className="flex flex-col gap-5 w-full">top searching product</div>
+        <div>
+          <TopSearchPro />
+        </div>
       </div>
     </div>
   );
